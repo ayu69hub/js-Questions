@@ -49,3 +49,4 @@ function square(num){
 ans = square(5);
 
 console.log(ans+10);
+
