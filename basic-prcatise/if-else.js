@@ -76,7 +76,7 @@ else if (num2>num1){
 unit = 115;
 
 
-if(unit>0 & unit<100){
+if(unit>0 && unit<100){
     console.log("pay 5/unit")
 }else if(unit>100&unit<200){
     console.log("pay 7/unit");
@@ -86,3 +86,22 @@ if(unit>0 & unit<100){
     
 }
 
+// user check
+
+let username = "admin"
+let password = "admin123"
+if (username =="admin"&& password == "admin123"){
+    console.log("login succesfull");
+    
+}else{
+    console.log("Invalid Credential")
+}
+
+
+// 
+
+let char = prompt("Enter the character")
+
+if (char>= "A"&& char<="Z"){
+    console.log("Uppercase");
+}
