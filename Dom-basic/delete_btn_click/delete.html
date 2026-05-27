@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOM Practice</title>
+
+  <style>
+
+    body{
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .box{
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 2px solid black;
+    }
+
+    button{
+      padding: 8px 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input{
+      padding: 8px;
+      width: 250px;
+    }
+
+    ul{
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <!-- TASK 5 -->
+  <div class="box">
+
+    <h2>Task 5 - Delete List Item</h2>
+
+    <p>
+      Add delete button dynamically using JavaScript
+    </p>
+
+  </div>
+
+
+  <script src="script.js">
+
+// TASK 5 - Delete List Item
+
+let taskList = document.getElementById("taskList");
+
+
+// create list item
+let li = document.createElement("li");
+
+li.textContent = "Learn DOM";
+
+
+// create delete button
+let deleteBtn = document.createElement("button");
+
+deleteBtn.textContent = "Delete";
+
+
+// delete functionality
+deleteBtn.addEventListener("click", function () {
+
+    li.remove();
+
+});
+
+
+// append button inside li
+li.appendChild(deleteBtn);
+
+
+// append li inside ul
+taskList.appendChild(li);
+
+
+  </script>
+
+</body>
+</html>
